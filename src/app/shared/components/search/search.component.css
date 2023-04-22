@@ -1,0 +1,13 @@
+.search__icon {
+    font-size: 2rem;
+    height: 1.5rem;
+    width: 2rem;
+    border-radius: 50rem;
+    font-weight: 600 !important;
+    color: var(--black);
+    margin: auto;
+}
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration { 
+    display: none; 
+}

@@ -1,0 +1,185 @@
+<div class="bookstore">
+    <div id="sliderXlNew" class="d-none d-xl-flex carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bookstore-carousel__item">
+            <div class="books-list justify-content-md-between">   
+              <div class=" card" *ngFor="let book of newBooksList">
+                <img [src]="book.cover" class="card__img" alt="Capa do Livro {{ book.title }}">
+                <div class="card__body" >
+                  <h3 class="card__title">{{ book.title }}</h3>
+                  <p class="card__author">{{ book.author }}</p>
+                  <p class="card__price">{{ book.price | currency:'BRL'}}</p>
+                  <app-star [style.width.rem]="book.rating * 1.2" [title]="book.rating"></app-star>
+                  <div class="card__buttons">
+                    <a [routerLink]="['/shop']"><app-button></app-button></a>   
+                    <app-button-favorite [book]="book" ></app-button-favorite>
+                  </div>
+                </div>
+              </div>   
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sliderMdNew" class="d-none d-md-flex d-xl-none carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bookstore-carousel__item">
+            <app-card
+            cardCapa="./../../../assets/images/books/7.jpg"
+            cardTitle="Procure nas Cinzas"
+            cardAuthor="Donlea, Charlie"
+            cardPrice="39.99"
+            >
+            </app-card>                
+            <app-card
+            cardCapa="./../../../assets/images/books/6.jpg"
+            cardTitle="Uma Mulher na Escuridão"
+            cardAuthor="Donlea, Charlie"
+            cardPrice="34.99"
+            >
+            </app-card>                  
+            <app-card
+            cardCapa="./../../../assets/images/books/8.jpg"
+            cardTitle="A Paciente Silenciosa"
+            cardAuthor="Michaelides, Alex"
+            cardPrice="29.99"
+            >
+            </app-card>                
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="bookstore-carousel__item">
+            <app-card
+            cardCapa="./../../../assets/images/books/10.jpg"
+            cardTitle="Os Testamentos"
+            cardAuthor="Atwood, Margaret"
+            cardPrice="35.99"
+            >
+            </app-card>                
+          </div>
+        </div>      
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#sliderMdNew" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#sliderMdNew" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="sliderSmNew" class="d-none d-sm-flex d-md-none carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bookstore-carousel__item">
+            <app-card
+            cardCapa="./../../../assets/images/books/7.jpg"
+            cardTitle="Procure nas Cinzas"
+            cardAuthor="Donlea, Charlie"
+            cardPrice="39.99"
+            >
+            </app-card>                
+            <app-card
+            cardCapa="./../../../assets/images/books/6.jpg"
+            cardTitle="Uma Mulher na Escuridão"
+            cardAuthor="Donlea, Charlie"
+            cardPrice="34.99"
+            >
+            </app-card>                
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="bookstore-carousel__item">
+            <app-card
+            cardCapa="./../../../assets/images/books/8.jpg"
+            cardTitle="A Paciente Silenciosa"
+            cardAuthor="Michaelides, Alex"
+            cardPrice="29.99"
+            >
+            </app-card>                  
+            <app-card
+            cardCapa="./../../../assets/images/books/10.jpg"
+            cardTitle="Os Testamentos"
+            cardAuthor="Atwood, Margaret"
+            cardPrice="35.99"
+            >
+            </app-card>              
+          </div>
+        </div>        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#sliderSmNew" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#sliderSmNew" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="sliderNew" class="d-flex d-sm-none carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bookstore-carousel__item">
+            <app-card
+            cardCapa="./../../../assets/images/books/7.jpg"
+            cardTitle="Procure nas Cinzas"
+            cardAuthor="Donlea, Charlie"
+            cardPrice="39.99"
+            >
+            </app-card>              
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="bookstore-carousel__item">
+            <app-card
+            cardCapa="./../../../assets/images/books/6.jpg"
+            cardTitle="Uma Mulher na Escuridão"
+            cardAuthor="Donlea, Charlie"
+            cardPrice="34.99"
+            >
+            </app-card>                
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="bookstore-carousel__item">
+            <app-card
+            cardCapa="./../../../assets/images/books/8.jpg"
+            cardTitle="A Paciente Silenciosa"
+            cardAuthor="Michaelides, Alex"
+            cardPrice="29.99"
+            >
+            </app-card>                
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="bookstore-carousel__item">
+            <app-card
+            cardCapa="./../../../assets/images/books/10.jpg"
+            cardTitle="Os Testamentos"
+            cardAuthor="Atwood, Margaret"
+            cardPrice="35.99"
+            >
+            </app-card>              
+          </div>
+        </div>        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#sliderNew" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#sliderNew" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>

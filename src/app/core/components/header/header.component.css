@@ -1,0 +1,22 @@
+/* BRAND HEADER STYLE */
+.brand {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 0.8rem;
+}
+
+.brand__logo {
+    height: 2.35rem;
+}
+
+.brand__title {
+    font-family: 'Cinzel', Tahoma, Verdana, serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white);
+}
+/* BRAND HEADER STYLE END */

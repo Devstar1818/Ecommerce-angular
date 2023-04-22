@@ -1,0 +1,39 @@
+.login-menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.login-menu__text, .login-menu__text a {
+    color: var(--gray-500);
+    text-decoration: none;
+    margin: 0; 
+}
+
+.login-menu__text a:hover {
+    color: var(--white);
+}
+
+.login-menu__account-icon, .login-menu__favorite-icon { /* bg icons */
+    height: 1.9rem;
+    width: 1.9rem;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.login-menu__account.active .login-menu__account-icon, .login-menu__account:hover .login-menu__account-icon { 
+    color: var(--gray-400);
+}
+
+.login-menu__favorite.active .login-menu__favorite-icon, .login-menu__favorite:hover .login-menu__favorite-icon { 
+    color: var(--pink);
+}
+
+.login-menu__favorite-icon ::ng-deep .mat-badge-content { /* bg e color badge wishlist */
+    background: var(--pink) !important;
+    color: var(--white);
+    margin: 0.1rem 0.1rem 0 0;
+}

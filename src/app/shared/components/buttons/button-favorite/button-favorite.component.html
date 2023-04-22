@@ -1,0 +1,10 @@
+<mat-icon 
+    [id]="'btnFavorite' + book.id"
+    [ngClass]="{'active': addedToWishlist}"
+    (click)="toggleBtnWishlist()"
+    class="button-favorite material-symbols"
+    data-bs-toggle="tooltip" 
+    data-bs-placement="top" 
+    title= "{{ title }}">
+    favorite
+</mat-icon>

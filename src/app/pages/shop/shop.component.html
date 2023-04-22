@@ -1,0 +1,126 @@
+<div class="shop flex-md-row">
+    <section class="sidebar justify-content-md-start">
+        <app-search placeHolder="Busque aqui..." class="d-none d-md-block"></app-search>
+        <div class="filtro__precos">
+            <h3 class="filtros__title">Preços</h3>
+            <div class="filtro__precos-inputs">
+              <div class="filtro__preco-minimo"><p class="filtro__precos-subtitle">Mínimo R$0.00</p>
+                <input 
+                type='number' 
+                value="0.00" 
+                step="0.01"
+                minlength="3" 
+                maxlength="4" 
+                min="0.00" 
+                max="99.99">
+              </div>
+              <div class="filtro__preco-maximo"><p class="filtro__precos-subtitle">Máximo R$99.99</p>
+                <input                
+                type='number' 
+                value="99.99" 
+                step="0.01"
+                minlength="3" 
+                maxlength="4" 
+                min="0.00" 
+                max="99.99">
+              </div>
+            </div>
+            <app-button buttonText="Aplicar filtro"></app-button>
+        </div>
+        <div class="filtro__avaliacoes">
+            <h3 class="filtros__title">Avaliações</h3>
+            <mat-radio-group aria-labelledby="radio-group-rating" class="radio-group-rating">
+              <mat-radio-button value="1">
+                <app-star classRating="five-stars"></app-star>
+              </mat-radio-button>
+              <mat-radio-button value="2">
+                <app-star classRating="for-stars"></app-star>
+              </mat-radio-button>
+              <mat-radio-button value="3">
+                <app-star classRating="three-stars"></app-star>
+              </mat-radio-button>
+              <mat-radio-button value="4">
+                <app-star classRating="two-stars"></app-star>
+              </mat-radio-button>
+              <mat-radio-button value="5">
+                <app-star classRating="one-star"></app-star>
+              </mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="filtro__generos">
+              <div class="accordion accordion-flush bg-transparent">
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed bg-transparent filtros__title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Gêneros
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                    <div class="accordion-body">
+                        <ul class="filtro__generos-list p-0">
+                            <li>
+                              <a [routerLink]="['/shop']"> Ação e aventura
+                                <span>[ {{ getQntBooksGenre(['ação','aventura']) }} ]</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Autoajuda
+                                <span>[ {{ getQntBooksGenre(['autoajuda']) }} ]</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Biografia
+                                <span>[ {{ getQntBooksGenre(['biografia']) }} ]</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Distopia
+                                <span>[ {{ getQntBooksGenre(['distopia']) }} ]</span> 
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Fantasia
+                                <span>[ {{ getQntBooksGenre(['fantasia']) }} ]</span> 
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Ficção científica
+                                <span>[ {{ getQntBooksGenre(['ficção científica']) }} ]</span> 
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Gospel
+                                <span>[ {{ getQntBooksGenre(['gospel']) }} ]</span> 
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> HQs e Mangás 
+                                <span>[ {{ getQntBooksGenre(['hq','mangá']) }} ]</span> 
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Infantil 
+                                <span>[ {{ getQntBooksGenre(['infantil']) }} ]</span> 
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Romance
+                                <span>[ {{ getQntBooksGenre(['romance']) }} ]</span> 
+                              </a>
+                            </li>
+                            <li>
+                              <a [routerLink]="['/shop']"> Terror e Suspense
+                                <span>[ {{ getQntBooksGenre(['terror','suspense']) }} ]</span> 
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="bookstore">
+        <app-books-list></app-books-list>
+    </section>
+</div>

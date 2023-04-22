@@ -1,0 +1,80 @@
+<div class="bookstore">
+    <div id="sliderXlSale" class="d-none d-xl-flex carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bookstore-carousel__item">
+            <app-card-sale
+            cardSaleCover="./../../../assets/images/books/13.jpg"
+            cardSaleDiscountPercent="0.15"
+            cardSaleTitle="O Iluminado"
+            cardSaleAuthor="King, Stephen"
+            cardSaleDescription="Jack Torrence consegue um emprego de zelador em um velho hotel, e acha que será a solução dos problemas..."
+            cardSaleOldPrice="64.99"
+            cardSalePrice="55.25"
+            cardSaleCardDiscountParcel="2"
+            cardSaleCardDiscountValue="29.99"
+            >    
+            </app-card-sale>
+            <app-card-sale
+            cardSaleCover="./../../../assets/images/books/18.jpg"
+            cardSaleDiscountPercent="0.30"
+            cardSaleTitle="Serena"
+            cardSaleAuthor="McEwan, Ian"
+            cardSaleDescription="Pemberton, um rico madeireiro, e sua esposa, Serena, são um casal ambicioso, determinado a derrubar..."
+            cardSaleOldPrice="29.99"
+            cardSalePrice="20.99"
+            cardSaleCardDiscountParcel="2"
+            cardSaleCardDiscountValue="12.99"
+            >    
+            </app-card-sale>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sliderSale" class="d-flex d-xl-none carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bookstore-carousel__item">
+            <app-card-sale
+            cardSaleCover="./../../../assets/images/books/13.jpg"
+            cardSaleDiscountPercent="0.15"
+            cardSaleTitle="O Iluminado"
+            cardSaleAuthor="King, Stephen"
+            cardSaleDescription="Jack Torrence consegue um emprego de zelador em um velho hotel, e acha que será a solução dos problemas..."
+            cardSaleOldPrice="64.99"
+            cardSalePrice="55.25"
+            cardSaleCardDiscountParcel="2"
+            cardSaleCardDiscountValue="29.99"
+            >    
+            </app-card-sale>            
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="bookstore-carousel__item">
+            <app-card-sale
+            cardSaleCover="./../../../assets/images/books/18.jpg"
+            cardSaleDiscountPercent="0.30"
+            cardSaleTitle="Serena"
+            cardSaleAuthor="King, Stephen"
+            cardSaleDescription="Pemberton, um rico madeireiro, e sua esposa, Serena, são um casal ambicioso, determinado a derrubar..."
+            cardSaleOldPrice="29.99"
+            cardSalePrice="20.99"
+            cardSaleCardDiscountParcel="2"
+            cardSaleCardDiscountValue="12.99"
+            >    
+            </app-card-sale>            
+          </div>
+        </div>        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#sliderSale" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#sliderSale" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>

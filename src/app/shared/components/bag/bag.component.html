@@ -1,0 +1,64 @@
+<a class="login-menu__bag">
+    <mat-icon class="login-menu__bag-icon material-symbols-outlined" 
+        matBadge="{{ qntProductsBag }}"
+        title="Minha Sacola"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        >
+        local_mall
+    </mat-icon>
+</a>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <div class="offcanvas-header__title">
+      <mat-icon class="material-symbols" matBadge="{{ qntProductsBag }}">local_mall
+      </mat-icon>
+      <h2 id="offcanvasRightLabel">Sacola</h2>
+    </div>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="offcanvas-body__lista-produtos">
+      <table class="table table-hover">
+        <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col" class="text-center"></th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let book of bag">
+            <tr>
+              <td class="bag__product-description">    
+                <img [src]="book.cover"  alt="Capa do Livro {{ book.title }}">
+                <h3>{{ book.title }}</h3>
+              </td>
+              <td class="bag__product-qnt">
+                <input 
+                [(ngModel)]="qntInput[book.id]" 
+                type='number' 
+                value="1" 
+                step="1" 
+                min="1"
+                max="5"
+                minlength="1" 
+                maxlength="1">
+              </td>
+              <td class="bag__product-price">
+                {{ book.price * qntInput[book.id] | currency:'BRL'}}
+              </td>
+            </tr>
+          </tbody>
+    </table>
+    </div>
+    <div class="offcanvas-body__finalizar-pedido">
+      <h4>Subtotal:</h4>
+      <h4>Frete:</h4>
+      <h4>Total:</h4>
+    </div>
+  </div>
+  <div class="offcanvas-footer">
+    <app-button buttonText="Finalizar Pedido"></app-button>
+  </div>
+</div>

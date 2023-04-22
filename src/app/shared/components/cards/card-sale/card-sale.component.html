@@ -1,0 +1,18 @@
+<div class="card-sale flex-sm-row">
+    <p class="card-sale__discount">{{ cardSaleDiscountPercent | percent }} OFF!</p>
+    <img [src]="cardSaleCover" class="card-sale__img" alt="Capa do Livro {{ cardSaleTitle }}">
+    <div class="card-sale__body px-4 px-sm-0">
+      <h3 class="card-sale__title">{{ cardSaleTitle }}</h3>
+      <p class="card-sale__author">{{ cardSaleAuthor }}</p>
+      <app-star [class]="classRating"></app-star>
+      <p class="card-sale__description">{{ cardSaleDescription }}</p>
+      <p class="card-sale__old-price">{{ cardSaleOldPrice | currency:'BRL'}}</p>
+      <p class="card-sale__price">{{ cardSalePrice | currency:'BRL'}}</p>
+      <p class="card-sale__price-description">no PIX ou {{ cardSaleCardDiscountParcel }}x de {{ cardSaleCardDiscountValue | currency:'BRL'}} no cartão.</p>
+      <div class="card-sale__buttons">
+        <a ><app-button buttonText="Comprar agora"></app-button></a>
+        <app-button-plus></app-button-plus>
+        <app-button-favorite></app-button-favorite>
+      </div>
+    </div>
+</div>

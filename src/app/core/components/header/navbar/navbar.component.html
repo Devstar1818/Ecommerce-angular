@@ -1,0 +1,46 @@
+<nav class="px-md-5 py-0 navbar navbar-expand-md navbar-light">
+  <div class="d-flex flex-row align-item-center justify-content-center d-md-block">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <mat-icon class="material-symbols-outlined">menu</mat-icon> 
+    </button>
+  </div>
+  <div class="w-100">
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav d-flex align-items-md-center">
+        <li class="nav-item">
+          <a class="nav-link mt-3 mt-md-0" [routerLink]="['/shop']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/shop/mais-vendidos']" routerLinkActive="active">Mais vendidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/shop/lancamentos']" routerLinkActive="active">Lançamentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/shop/ofertas']" routerLinkActive="active">Ofertas</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link d-flex flex-row gap-1 align-item-center" [routerLink]="['#']" routerLinkActive="active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <p class="m-0 m-md-auto">Gêneros</p>
+            <mat-icon class="m-0 m-md-auto dropdown__icon-expand material-symbols-outlined">arrow_drop_down</mat-icon> 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item">Ação e aventura</a></li>
+            <li><a class="dropdown-item">Autoajuda</a></li>
+            <li><a class="dropdown-item">Biografia</a></li>
+            <li><a class="dropdown-item">Distopia</a></li>
+            <li><a class="dropdown-item">Fantasia</a></li>
+            <li><a class="dropdown-item">Ficção científica</a></li>
+            <li><a class="dropdown-item">Gospel</a></li>
+            <li><a class="dropdown-item">HQs e Mangás</a></li>
+            <li><a class="dropdown-item">Infantil</a></li>
+            <li><a class="dropdown-item">Romance</a></li>
+            <li><a class="dropdown-item">Terror e Suspense</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" [routerLink]="['/shop']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Ver todos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

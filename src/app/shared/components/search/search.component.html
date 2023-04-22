@@ -1,0 +1,12 @@
+<form class="d-flex flex-row w-100">
+    <input (keyup.enter)="search()"
+        class="form-control me-0 rounded-pill rounded-end border-end-0" 
+        type="search" 
+        [placeholder]= "placeHolder"
+        aria-label="Search">
+    <button 
+        class="btn btn-light bg-white rounded-pill rounded-start border border-start-0 py-0 pe-4 ps-3" 
+        type="submit">
+        <mat-icon class="search__icon material-symbols-outlined p-0 m-auto">search</mat-icon>
+    </button>
+</form>

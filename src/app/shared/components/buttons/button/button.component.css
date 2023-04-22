@@ -1,0 +1,43 @@
+/* BUTTON DEFAULT STYLE */
+.button {
+    font-family: 'Inter', Tahoma, Verdana, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    border: 0.15rem solid var(--gray-100);
+    border-radius: 50rem;
+    background: var(--black);
+    color: var(--white);
+    padding: 0.35rem 1.25rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: invert(100);
+}
+/* BUTTON DEFAULT STYLE END */
+
+/* BUTTON SECONDARY STYLE */
+.button--secondary {
+    font-weight: 600;
+    color: var(--black);
+    border: 0.15rem solid var(--gray-200);
+    background: transparent;
+}
+
+.button--secondary:hover {
+    font-weight: 700;
+    color: var(--black);
+    border: 0.15rem solid var(--black);
+    background: var(--white);
+}
+/* BUTTON SECONDARY STYLE END */
+
+
+/* BUTTON SECONDARY STYLE */
+.button--radius-right {
+    border-radius: 0 50rem 50rem 0;
+}
+/* BUTTON SECONDARY STYLE END */

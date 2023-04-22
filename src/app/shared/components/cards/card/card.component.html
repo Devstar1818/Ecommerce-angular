@@ -1,0 +1,13 @@
+<div class="card">
+    <img [src]="cardCapa" class="card__img" alt="Capa do Livro {{ cardTitle }}">
+    <div class="card__body" >
+      <h3 class="card__title">{{ cardTitle }}</h3>
+      <p class="card__author">{{ cardAuthor }}</p>
+      <p class="card__price">{{ cardPrice | currency:'BRL'}}</p>
+      <app-star></app-star>
+      <div class="card__buttons">
+        <a [routerLink]="['']"><app-button></app-button></a>   
+        <app-button-favorite></app-button-favorite>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+/* BRAND FOOTER STYLE */
+.brand {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 0.8rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.brand__logo {
+    height: 2rem;
+    filter: invert(100);
+}
+
+.brand__title {
+    font-family: 'Cinzel', Tahoma, Verdana, serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--gray-700);
+    margin: auto;
+}
+
+.brand__description {
+    color: var(--gray-700);
+    text-align: justify;
+}
+/* BRAND FOOTER STYLE END */
+
+/* MENU FOOTER STYLE */
+.nav-item a {
+    color: var(--gray-700) !important;
+}
+/* MENU FOOTER STYLE END */

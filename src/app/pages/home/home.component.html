@@ -1,0 +1,101 @@
+<div class="home">
+  <main>
+      <div id="sliderFeatured" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#sliderFeatured" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#sliderFeatured" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#sliderFeatured" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../../../assets/images/slider/slider1.png" class="d-block w-100" alt="...">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h2 class="carousel-item__title">A Teoria de Tudo</h2>
+                  <p class="carousel-item__description">Conheça a extraordinária história de Jane e Stephen Hawking!</p>
+                  <div class="carousel-item__btn-container"><a [routerLink]="['']"><app-button></app-button></a>  </div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="../../../assets/images/slider/slider2.png" class="d-block w-100" alt="...">
+              <div class="container">
+                <div class="carousel-caption text-start m-auto">
+                  <h2 class="carousel-item__title">Kit Harry Potter</h2>
+                  <p class="carousel-item__description">Confira o kit com livro Harry Potter e a Pedra Filosofal!</p>
+                  <div class="carousel-item__btn-container"><a [routerLink]="['']"><app-button></app-button></a>  </div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="../../../assets/images/slider/slider3.png" class="d-block w-100" alt="...">
+              <div class="container">
+                <div class="carousel-caption text-start m-auto">
+                  <h2 class="carousel-item__title">1984. Orwell, G.</h2>
+                  <p class="carousel-item__description">O Grande Irmão está de olho em Você!</p>
+                  <div class="carousel-item__btn-container"><a [routerLink]="['']"><app-button></app-button></a>  </div> 
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="d-none d-sm-block carousel-control-prev" type="button" data-bs-target="#sliderFeatured" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="d-none d-sm-block carousel-control-next" type="button" data-bs-target="#sliderFeatured" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </main>
+
+  <section class="tipbar gap-3 gap-lg-5 justify-content-start justify-content-sm-around">
+    <div class="tipbar__item">
+      <mat-icon class="tipbar__icon material-symbols-outlined">local_shipping</mat-icon>
+      <div class="d-flex flex-column">
+        <h3 class="tipbar__title m-0">Consulte o Frete</h3>
+        <p>para a sua região</p>
+      </div>
+    </div>
+
+    <div class="tipbar__item">
+      <mat-icon class="tipbar__icon material-symbols-outlined">credit_card</mat-icon>
+      <div class="d-flex flex-column">
+        <h3 class="tipbar__title m-0">Aceitamos Pagamentos</h3>
+        <p>via cartão ou pix</p>
+      </div>
+    </div>
+    
+    <div class="tipbar__item">
+      <mat-icon class="tipbar__icon material-symbols-outlined">sell</mat-icon>
+      <div class="d-flex flex-column">
+        <h3 class="tipbar__title m-0">Promoções</h3>
+        <p>confira as ofertas</p>
+      </div>
+    </div>         
+  </section>
+
+  <section id="slidersPopularContainer">
+    <h2 class="page__subtitle">Mais vendidos</h2>
+    <app-carousel-popular></app-carousel-popular>
+  </section>
+
+  <section id="slidersNewContainer">
+    <h2 class="page__subtitle">Lançamentos</h2>
+    <app-carousel-new></app-carousel-new>
+  </section>
+
+  <section id="slidersSaleContainer">
+    <h2 class="page__subtitle">Ofertas</h2>
+    <app-carousel-sale></app-carousel-sale>
+  </section>
+
+  <section class="d-flex flex-row align-items-enter justify-content-center pt-4 pb-5">
+    <a [routerLink]="['/shop']">
+      <app-button buttonText="Ir para o shop" buttonType="button--secondary"></app-button>
+    </a>
+  </section>
+</div>

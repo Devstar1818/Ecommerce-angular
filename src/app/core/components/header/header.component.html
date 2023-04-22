@@ -1,0 +1,21 @@
+<header class="d-flex flex-column border-bottom">
+    <div class="py-3 py-md-4 px-4 px-md-5 bg-black d-flex flex-row flex-wrap align-items-center justify-content-around justify-content-sm-between">
+        <div class="mx-1 mb-2 mb-sm-0 d-flex flex-row flex-wrap align-item-center">
+            <a [routerLink]="['']" class="brand">
+                <img class="brand__logo img-fluid" src="../../../../../assets/images/logo/isologo-josisbox.png" alt="Logo Josi's Box">
+                <h2 class="brand__title m-auto">Josi's Box</h2>
+            </a>
+        </div>
+
+        <div class="d-none d-md-block mb-0 mx-1 col-5">
+            <app-search placeHolder="Buscar por livros, gêneros, autores..."></app-search>
+        </div>
+
+        <app-login class="my-2 mx-2 m-sm-0"></app-login>
+        
+    </div>
+    <div class="py-2 px-3 px-sm-4 p-md-0 d-flex flex-row align-item-center justify-content-around justify-content-sm-between">
+        <app-navbar></app-navbar>
+        <app-search placeHolder="Busque aqui..." class="d-block d-md-none ms-2"></app-search>
+    </div>
+</header>

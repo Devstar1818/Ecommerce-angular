@@ -1,0 +1,16 @@
+.button-favorite {
+    min-width: 1.65rem;
+    min-height: 1.65rem;
+    font-size: 1.65rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 0.085rem;
+    -webkit-text-stroke-color: var(--black);
+    color: transparent;
+    margin-bottom: -0.4rem;
+    cursor: pointer;
+}
+
+.button-favorite:hover, .active {
+    color: var(--black);
+    transform: scale(1.1);
+}

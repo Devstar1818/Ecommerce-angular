@@ -1,0 +1,64 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.15rem;  
+    padding: 1.5rem;
+    background: var(--gray-100);
+    border: none;
+    border-radius: 0;
+    min-width: 14rem;
+    min-height: 100% !important;
+}
+
+.card__img {
+    width: 11rem;
+    -webkit-box-shadow: 0 0.1rem 0.5rem rgb(84, 84, 84, 0.7);
+    box-shadow: 0 0.1rem 0.5rem rgb(84, 84, 84, 0.7);
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.25rem;
+    width: 11rem;
+    height: 100%;
+    margin-top: 0.65rem;
+}
+
+.card__title {
+    font-size: 0.95rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    word-break: break-word;
+}
+
+.card__author {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.card__price {
+    font-family: 'Cinzel', Tahoma, Verdana, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0.05rem 0.085rem 0.125rem  var(--gray-500);
+    color: var(--black);
+    margin: 0.25rem 0 0;
+}
+
+.card__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55rem;
+    justify-content: space-between;
+}
+
+.card__buttons a {
+    width: 100%;
+}

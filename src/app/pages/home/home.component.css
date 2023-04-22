@@ -1,0 +1,86 @@
+/* HOME CONTAINER STYLE */
+.home {
+    width: 100%;
+    background: var(--light);
+}
+/* HOME CONTAINER STYLE END */
+
+/* SLIDER FEATURED STYLE */
+#sliderFeatured .carousel-control-prev, #sliderFeatured .carousel-control-next {
+    width: 8rem;
+}
+
+#sliderFeatured .carousel-control-prev-icon, #sliderFeatured .carousel-control-next-icon {
+    border: 0; 
+    outline: none;
+}
+
+#sliderFeatured .carousel-item img {
+    height: 16rem;
+    object-fit: cover;
+}
+
+#sliderFeatured .carousel-item__title {
+    font-family: 'Cinzel', Tahoma, Verdana, serif;
+    font-size: 1.85rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+#sliderFeatured .carousel-item__description {
+    font-family: 'Inter', Tahoma, Verdana, sans-serif;
+    margin-bottom: 1.125rem; 
+}
+
+#sliderFeatured .carousel-item__btn-container {
+    width: 8rem;
+}
+/* SLIDER FEATURED STYLE END */
+
+/* SLIDERS BOOKSTORE STYLE */
+#slidersPopularContainer, #slidersNewContainer, #slidersSaleContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+}
+/* SLIDERS BOOKSTORE STYLE END */
+
+/* TIPBAR STYLE */
+.tipbar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background: white;
+    user-select: none;
+    padding: 3rem 5rem;
+    margin-bottom: 2rem;
+}
+
+.tipbar__item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.85rem;
+}
+
+.tipbar__icon {
+    min-width: 3rem;
+    min-height: 3rem;
+    font-size: 3rem;
+}
+
+.tipbar__title {
+    font-weight: 500;
+}
+/* TIPBAR STYLE END */
+
+/* BOOKSTORE STYLE */
+.bookstore__title {
+    font-family: 'Cinzel', Tahoma, Verdana, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    margin: 0;
+}
+/* BOOKSTORE STYLE END */

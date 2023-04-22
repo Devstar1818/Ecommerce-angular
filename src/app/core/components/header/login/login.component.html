@@ -1,0 +1,26 @@
+<div class="login-menu">
+    <a class="login-menu__account" [routerLink]="['/minha-conta']" routerLinkActive="active">
+        <mat-icon 
+        class="login-menu__account-icon material-symbols-outlined"
+        title="Minha Conta">
+        account_circle
+        </mat-icon>
+    </a>
+    <div class="me-2 d-none d-md-flex flex-column">
+    <p class="login-menu__text">
+        <a [routerLink]="['']">Entre </a>ou
+    </p>
+    <p class="login-menu__text">
+        <a [routerLink]="['']">Cadastre-se.</a>
+    </p>
+    </div>
+    <a class="login-menu__favorite" [routerLink]="['favoritos']" routerLinkActive="active">
+        <mat-icon class="login-menu__favorite-icon material-symbols-outlined"
+        matBadge="{{ qntWishesWishlist }}"
+        title="Meus Favoritos"
+        >
+        favorite
+        </mat-icon>
+    </a>
+    <app-bag></app-bag>
+</div>

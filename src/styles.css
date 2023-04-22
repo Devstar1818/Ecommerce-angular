@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+:root{
+    --white: #FAFAFA;
+    --black: #0A0A0A;
+    --gray-100: #EAEAEA;
+    --gray-200: #E4E4E4;
+    --gray-300: #DEE2E6;
+    --gray-400: #CACACA;
+    --gray-500: #707070;
+    --gray-600: #3D3D3D;
+    --gray-700: #303030;
+    --light: #F8F9FA;
+    --dark: #1B1C1E;
+    --red: #FF0000;
+    --pink: #FF10AF;
+    --yellow: #FF7C03;
+    --green: #28EE00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: 'Inter', Tahoma, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+  
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--gray-400) transparent; 
+}
+
+input:focus {
+  border-color: var(--gray-300) !important;
+  box-shadow: 0 0 0.5rem rgba(112, 112, 112, 0.3) !important;
+  outline: 0 !important;
+}
+
+/* SCROLLBAR STYLE (Chrome, Edge, Safari Style) */
+  body::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--white);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--gray-400);
+  }
+/* SCROLLBAR STYLE END */
+
+/* SLIDER BOOSTRAP STYLE DEFAULT */
+.carousel-control-prev, .carousel-control-next {
+  width: 3.5rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  border: 0.25rem solid transparent; 
+  border-radius: 50rem;
+  outline: 0.125rem solid var(--white);
+}
+/* SLIDER BOOSTRAP STYLE DEFAULT END */
+
+/* TITLES STYLE DEFAULT */
+h3, h4 {
+  color: var(--black) !important;
+  font-weight: 500 !important;
+}
+
+.page__title {
+  font-family: 'Cinzel', Tahoma, Verdana, serif !important;
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  padding: 2rem !important;
+  margin: 0 !important;
+}
+
+.page__subtitle {
+  font-family: 'Cinzel', Tahoma, Verdana, serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  padding: 2rem !important;
+  margin: 0 !important;
+}
+/* TITLES STYLE DEFAULT END */
+
+/* BOOKS LIST STYLE */
+.books-list {
+  display: flex !important;
+  justify-content: center !important;
+  flex-flow: row wrap !important;
+  gap: 1.5rem !important; 
+}
+
+.card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 0.15rem !important;  
+  padding: 1.5rem !important;
+  background: var(--gray-100) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  min-width: 14rem !important;
+  min-height: 100% !important;
+}
+
+.card__img {
+  width: 11rem !important;
+  height: 16rem !important;
+  object-fit: cover !important;
+  -webkit-box-shadow: 0 0.1rem 0.5rem rgb(84, 84, 84, 0.7) !important;
+  box-shadow: 0 0.1rem 0.5rem rgb(84, 84, 84, 0.7) !important;
+}
+
+.card__body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 0.25rem !important;
+  width: 11rem !important;
+  height: 100% !important;
+  margin-top: 0.65rem !important;
+}
+
+.card__title {
+  font-size: 0.95rem !important;
+  line-height: 1.2rem !important;
+  font-weight: 500 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  word-break: break-word !important;
+}
+
+.card__author {
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+}
+
+.card__price {
+  font-family: 'Cinzel', Tahoma, Verdana, serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  text-shadow: 0.05rem 0.085rem 0.125rem  var(--gray-500) !important;
+  color: var(--black) !important;
+  margin: 0.25rem 0 0 !important;
+}
+
+.card__buttons {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.55rem !important;
+  justify-content: space-between !important;
+}
+
+.card__buttons a {
+  width: 100% !important;
+} 
+/* BOOKS LIST STYLE END */

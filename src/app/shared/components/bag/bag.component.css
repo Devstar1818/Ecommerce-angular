@@ -1,0 +1,105 @@
+/* BAG ICON STYLE */
+.login-menu__bag-icon { /* bg icons */
+    height: 1.9rem;
+    width: 1.9rem;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.login-menu__bag.active .login-menu__bag-icon{ 
+    font-weight: 600;
+    color: var(--red);
+}
+
+.login-menu__bag-icon ::ng-deep .mat-badge-content { /* bg e color badge bag */
+    background: var(--red) !important;
+    color: var(--white); 
+    margin: 0.1rem 0.1rem 0 0;
+}
+
+.login-menu__bag.active .login-menu__bag-icon, .login-menu__bag:hover .login-menu__bag-icon { 
+    color: var(--gray-400);
+}
+/* BAG ICON STYLE END */
+
+/* BAG OFFCANVAS STYLE */
+.offcanvas {
+    display: flex;
+    flex-direction: column;
+    background: var(--light) !important;
+}
+
+.offcanvas-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.15rem solid var(--gray-100);
+    padding: 1.7rem;
+    background: var(--white);
+}
+
+.offcanvas-header__title {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 1rem;
+}
+
+.offcanvas-header__title h2 {
+    font-family: 'Cinzel', Tahoma, Verdana, serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.offcanvas-header__title mat-icon  {
+    font-size: 1.6rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-weight: 600;
+    padding: 0;
+    margin-top: -0.3rem;
+}
+
+.offcanvas-header__title mat-icon ::ng-deep .mat-badge-content{
+    background: var(--red) !important;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.5rem 1.7rem;
+    overflow-y: scroll;
+    background: var(--gray-100);
+}
+
+th {
+    border-bottom: 0.05rem solid transparent !important;
+}
+
+.offcanvas-body__finalizar-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.offcanvas-body__finalizar-pedido h4 {
+    padding: 0;
+    margin: 0;
+}
+
+
+.offcanvas-footer {
+    padding: 1.7rem;
+}
+/* BAG OFFCANVAS STYLE END */

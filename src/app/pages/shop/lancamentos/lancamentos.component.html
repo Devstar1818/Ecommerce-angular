@@ -1,0 +1,18 @@
+<section id="newContainer">
+    <h1 id="lancamentos" class="page__title">Lançamentos</h1>
+    <div class="books-list justify-content-md-between">   
+      <div class=" card" *ngFor="let book of newBooksList">
+        <img [src]="book.cover" class="card__img" alt="Capa do Livro {{ book.title }}">
+        <div class="card__body" >
+          <h3 class="card__title">{{ book.title }}</h3>
+          <p class="card__author">{{ book.author }}</p>
+          <p class="card__price">{{ book.price | currency:'BRL'}}</p>
+          <app-star [style.width.rem]="book.rating * 1.2" [title]="book.rating"></app-star>
+          <div class="card__buttons">
+            <a [routerLink]="['/shop']"><app-button></app-button></a>   
+            <app-button-favorite [book]="book" ></app-button-favorite>
+          </div>
+        </div>
+      </div>   
+    </div>
+</section>

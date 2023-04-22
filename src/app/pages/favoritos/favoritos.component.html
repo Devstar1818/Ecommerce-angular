@@ -1,0 +1,60 @@
+
+<section class="wishlist">
+    <h2 id="favoritos" class="page__title">Meus Favoritos</h2>
+    <div class="wishlist__list table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                  <th scope="col" class="wishlist__product-cover">Produto</th>
+                  <th scope="col" class="wishlist__product-about"></th>
+                  <th scope="col" class="wishlist__product-price">Preço</th>
+                  <th scope="col" class="wishlist__add-bag">Adicionar à Sacola</th>
+                  <th scope="col" class="text-center">Remover</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let wish of wishlist">
+                <tr>
+                  <td class="wishlist__product-cover">    
+                    <img [src]="wish.cover"  alt="Capa do Livro {{ wish.title }}">
+                  </td>
+                  <td class="wishlist__product-about">
+                    <h3>{{ wish.title }}</h3>
+                    <p>{{ wish.author }}</p>
+                    <app-star [style.width.rem]="wish.rating * 1.2" [title]="wish.rating"></app-star>
+                  </td>
+                  <td class="wishlist__product-price">
+                    <span>{{ wish.price | currency:'BRL'}}</span>
+                  </td>
+                  <td class="wishlist__add-bag">
+                    <div>                    
+                        <input 
+                        name ="qntInput"
+                        type='number' 
+                        step="1" 
+                        value="1" 
+                        min="1"
+                        max="5"
+                        minlength="1" 
+                        maxlength="1">
+
+                        <app-button 
+                        buttonText="Adicionar à sacola" 
+                        buttonType="button--radius-right">
+                        </app-button>
+                    </div>
+                  </td>
+                  <td class="wishlist__remove">
+                    <mat-icon
+                      (click)="btnRemoveFromWishlist(wish)"
+                      class="button-delete material-symbols"
+                      data-bs-toggle="tooltip" 
+                      data-bs-placement="top" 
+                      title="Remover dos favoritos">
+                      delete
+                    </mat-icon>
+                  </td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</section>

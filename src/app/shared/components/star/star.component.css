@@ -1,0 +1,59 @@
+.container {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.star {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--yellow);
+    margin: -0.15rem 0 -0.35rem -0.27rem;
+    padding: 0;
+}
+
+.five-stars {
+    width: 6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    padding: 0;
+    margin: 0;
+}
+
+.for-stars {
+    width: 4.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    padding: 0;
+    margin: 0;
+}
+
+.three-stars {
+    width: 3.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    padding: 0;
+    margin: 0;
+}
+
+.two-stars {
+    width: 2.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    padding: 0;
+    margin: 0;
+}
+
+.one-star {
+    width: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    padding: 0;
+    margin: 0;
+}
+
